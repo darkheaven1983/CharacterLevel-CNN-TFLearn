@@ -38,8 +38,9 @@ In the validation set we got up to 96% accuracy
 
 
 ### Testing
-Use the bestcheckpoint file to test the model with this command
-before runing it, select the checkpoint you want to use and write it down in train.py
+select the best checkpoint you want to use and write it down in train.py 
+
+and test the model running:
 ```sh
 $ cd $DBPedia
 $ python train.py
