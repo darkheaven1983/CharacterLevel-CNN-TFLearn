@@ -12,13 +12,13 @@ Download the file 'DBPedia.tar.gz' and extract its content in a folder that we w
 
 ### Requisites
 the bleeding edge version of TFLearn (0.2.2)
+
 tensorflow-gpu (0.12.0rc0)
+
 Numpy
 
 ### The model
-The model uses a preprocess to convert each note into a numpy array of numbers representing each character from this alphabet:
-"abcdefghijklmnopqrstuvwxyz0123456789-,;.!?:'\"/\\|_@#$%^&*~`+ =<>()[]{}" (71 characters)
-The model 
+The model uses a preprocess to convert each note into a numpy array of numbers representing each character from a 71 character alphabet using lowercase letters, punctuation simbols and others
 
 
 ### Runing the model
@@ -26,4 +26,21 @@ The model
 ```sh
 $ cd /$DBPedia
 $ python CNN.py
+```
+### Results
+Training Accuracy
+![Training Accuracy](AccTrain.png)
+
+Validation Accuracy
+![Validation Accuracy](AccVal.png)
+
+In the validation set we got up to 96% accuracy
+
+
+### Testing
+Use the bestcheckpoint file to test the model with this command
+before runing it, select the checkpoint you want to use and write it down in train.py
+```sh
+$ cd $DBPedia
+$ python train.py
 ```
