@@ -29,9 +29,11 @@ $ python CNN.py
 ```
 ### Results
 Training Accuracy
+
 ![Training Accuracy](AccTrain.png)
 
 Validation Accuracy
+
 ![Validation Accuracy](AccVal.png)
 
 In the validation set we got up to 96% accuracy
